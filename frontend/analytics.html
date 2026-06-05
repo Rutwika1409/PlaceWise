@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🎓 Placement Predictor
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="predict.html">Predict</a></li>
+            <li><a href="analytics.html" class="active">Analytics</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="analytics-page">
+
+        <h1>Placement Analytics Dashboard</h1>
+
+        <p class="analytics-subtitle">
+            Explore insights, feature importance, and placement trends through interactive analytics.
+        </p>
+
+        <div class="slider-container">
+
+            <button class="slider-btn" onclick="prevSlide()">
+                ❮
+            </button>
+
+            <div class="image-card">
+
+                <img
+                    id="analyticsImage"
+                    src="assets/top_features.png"
+                    alt="Analytics Plot"
+                >
+
+                <h2 id="imageTitle">
+                    Top Placement Influencing Features
+                </h2>
+
+                <p id="imageDescription">
+                    Most important factors affecting student placement outcomes.
+                </p>
+
+            </div>
+
+            <button class="slider-btn" onclick="nextSlide()">
+                ❯
+            </button>
+
+        </div>
+
+        <div class="slide-indicator">
+            <span id="slideCounter">1 / 9</span>
+        </div>
+
+    </section>
+
+    <script src="js/analytics.js"></script>
+
+</body>
+
+</html>

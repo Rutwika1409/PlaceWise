@@ -1,0 +1,361 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111827;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:700;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero span{
+background:linear-gradient(90deg,#38bdf8,#8b5cf6);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+.hero-buttons{
+margin-top:30px;
+}
+
+.btn-primary,
+.btn-secondary{
+padding:15px 30px;
+text-decoration:none;
+border-radius:12px;
+display:inline-block;
+margin:10px;
+font-weight:600;
+}
+
+.btn-primary{
+background:#38bdf8;
+color:black;
+}
+
+.btn-secondary{
+background:#8b5cf6;
+color:white;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:60px 8%;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.features{
+padding:80px 8%;
+text-align:center;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.feature-card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-8px);
+background:#38bdf8;
+color:black;
+}
+
+.predict-section{
+padding:80px 8%;
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+input,
+select{
+padding:15px;
+border:none;
+border-radius:10px;
+background:#1e293b;
+color:white;
+}
+
+.predict-btn{
+width:100%;
+margin-top:30px;
+padding:18px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#38bdf8,#8b5cf6);
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+.result-card{
+margin-top:40px;
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+}
+
+.analytics-section,
+.about-section{
+padding:80px 8%;
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:40px;
+margin-top:50px;
+border-top:1px solid #334155;
+}
+.analytics-page{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.analytics-page h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.analytics-subtitle{
+    opacity:0.8;
+    margin-bottom:40px;
+}
+
+.slider-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+}
+
+.image-card{
+
+    width:900px;
+    max-width:100%;
+
+    background:#1e293b;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,.15);
+}
+
+.image-card img{
+
+    width:100%;
+    height:500px;
+
+    object-fit:contain;
+
+    border-radius:15px;
+}
+
+.image-card h3{
+    margin-top:20px;
+}
+
+.slider-btn{
+
+    width:60px;
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:30px;
+
+    color:white;
+
+    background:
+    linear-gradient(
+    135deg,
+    #38bdf8,
+    #8b5cf6
+    );
+
+    transition:.3s;
+}
+
+.slider-btn:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:
+    0 0 25px rgba(139,92,246,.5);
+
+}
+.about-hero{
+
+    padding:120px 8%;
+    text-align:center;
+
+}
+
+.about-hero h1{
+
+    font-size:4rem;
+
+    background:
+    linear-gradient(
+    90deg,
+    #38bdf8,
+    #8b5cf6
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+
+}
+
+.about-hero p{
+
+    margin-top:20px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+
+    color:#cbd5e1;
+    line-height:1.8;
+
+}
+
+.about-card{
+
+    padding:60px 8%;
+    text-align:center;
+
+}
+
+.about-card h2{
+
+    margin-bottom:25px;
+    color:#38bdf8;
+
+}
+
+.tech-grid{
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+}
+
+.tech-card{
+
+    padding:25px;
+
+    background:#1e293b;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.tech-card:hover{
+
+    transform:translateY(-6px);
+
+    background:#38bdf8;
+
+    color:black;
+}
+
+.workflow{
+
+    font-size:1.3rem;
+
+    line-height:2;
+
+    margin-top:30px;
+
+}
+
+.future-list{
+
+    list-style:none;
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:left;
+
+    line-height:2;
+
+}
