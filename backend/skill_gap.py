@@ -1,13 +1,13 @@
 import json
-
+from pathlib import Path
 
 def load_benchmarks():
+    base_dir = Path(__file__).resolve().parent.parent
 
     with open(
-        "models/benchmarks.json",
+        base_dir / "models" / "benchmarks.json",
         "r"
     ) as f:
-
         return json.load(f)
 
 
