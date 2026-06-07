@@ -1,97 +1,193 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
+
 
 <head>
 
+
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
 <title>Predict Placement</title>
 
+
+
 <link rel="stylesheet" href="css/style.css">
+
+
 
 </head>
 
+
+
 <body>
+
+
 
 <nav class="navbar">
 
+
+
 <div class="logo">
+
 🎓 Placement Predictor
+
 </div>
 
+
+
 <ul class="nav-links">
+
 <li><a href="index.html">Home</a></li>
+
 <li><a href="predict.html">Predict</a></li>
+
 <li><a href="analytics.html">Analytics</a></li>
+
 <li><a href="about.html">About</a></li>
+
 </ul>
+
+
 
 </nav>
 
+
+
 <section class="predict-section">
+
+
 
 <h1>Placement Prediction Form</h1>
 
+
+
 <form id="predictionForm">
+
+
 
 <div class="form-grid">
 
-<input id="cgpa" type="number" placeholder="CGPA">
+
+
+<input id="cgpa" type="number" step="0.01" min="0" max="10" placeholder="CGPA">
+
+
 
 <select id="branch">
+
 <option>CSE</option>
+
 <option>IT</option>
+
 <option>ECE</option>
+
 <option>EEE</option>
+
 <option>Civil</option>
+
 <option>Mechanical</option>
+
 </select>
 
-<input id="backlogs" type="number" placeholder="Backlogs">
-<input id="internships_count" type="number" placeholder="Internships Count">
-<input id="projects_count" type="number" placeholder="Projects Count">
 
-<input id="coding_skill_score" type="number" placeholder="Coding Skill Score">
-<input id="mock_interview_score" type="number" placeholder="Mock Interview Score">
-<input id="logical_reasoning_score" type="number" placeholder="Logical Reasoning Score">
-<input id="communication_skill_score" type="number" placeholder="Communication Skill Score">
-<input id="aptitude_score" type="number" placeholder="Aptitude Score">
-<input id="leadership_score" type="number" placeholder="Leadership Score">
-<input id="extracurricular_score" type="number" placeholder="Extracurricular Score">
+
+<input id="backlogs" type="number" min ="0" max = "60" placeholder="Backlogs">
+
+<input id="internships_count" type="number" min = "0" placeholder="Internships Count">
+
+<input id="projects_count" type="number" min = "0" placeholder="Projects Count">
+
+
+
+<input id="coding_skill_score" type="number" min ="0" max ="100" placeholder="Coding Skill Score">
+
+<input id="mock_interview_score" type="number" min ="0" max ="100" placeholder="Mock Interview Score">
+
+<input id="logical_reasoning_score" type="number" min ="0" max ="100" placeholder="Logical Reasoning Score">
+
+<input id="communication_skill_score" type="number" min ="0" max ="100" placeholder="Communication Skill Score">
+
+<input id="aptitude_score" type="number" min ="0" max ="100" placeholder="Aptitude Score">
+
+<input id="leadership_score" type="number" min ="0" max ="100" placeholder="Leadership Score">
+
+<input id="extracurricular_score" type="number" min ="0" max ="100" placeholder="Extracurricular Score">
+
+
 
 </div>
 
+
+
 <button class="predict-btn">
+
 Predict Placement
+
 </button>
+
+
 
 </form>
 
+
+
 <div class="result-card">
+
+
 
 <h2>Prediction Result</h2>
 
+
+
 <p id="probability">
+
 Placement Probability: --
+
 </p>
+
+
 
 <p id="status">
+
 Status: --
+
 </p>
 
+
+
 <h3>Skill Gaps</h3>
+
 <ul id="skillGaps"></ul>
 
+
+
 <h3>Recommendations</h3>
+
 <ul id="recommendations"></ul>
+
+
 
 <p id="finalRecommendation"></p>
 
+
+
 </div>
+
+
 
 </section>
 
+
+
 <script src="/js/predict.js"></script>
+
 </body>
+
 </html>
